@@ -1,7 +1,8 @@
 <template>
   <!-- 务必看懂下面这一行代码 -->
   <!-- <h2 a="1+1" :b="1+1" c="x" :d="x"></h2> -->
-  <Person a="哈哈" :list="personList"></Person>
+  <!-- <Person a="哈哈" :list="personList"></Person> -->
+  <RouterView/>
 </template>
 
 <script setup lang="ts">
@@ -21,4 +22,9 @@ let personList = reactive<Persons>([
 </script>
 
 <style scoped>
+.av-bar {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc
+}
 </style>
